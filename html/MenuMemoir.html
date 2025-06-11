@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Memoir - Menu</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <style>
+            body {
+                font-family: 'Segoe UI', 'Roboto', sans-serif;
+                background-color: #1c1a18;
+                color: #f5f5f5;
+                line-height: 1.8;
+            }
+
+            .navbar {
+                background-color: #1c1a18;
+                border-bottom: 1px solid #4a4a4a;
+                padding: 15px 0;
+            }
+
+            .navbar-brand,
+            .nav-link {
+                color: #fff !important;
+                font-weight: 500;
+                font-size: 1.1rem;
+                transition: color 0.3s ease;
+            }
+
+            .nav-link:hover {
+                color: #d89b5c !important;
+            }
+
+            .btn-register {
+                background-color: #b57d42;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 8px;
+                font-weight: 500;
+                transition: background-color 0.3s ease;
+            }
+
+            .btn-register:hover {
+                background-color: #d89b5c;
+            }
+
+            .menu-section {
+                padding: 100px 0;
+                background-color: #1c1a18;
+            }
+
+            .menu-section h1 {
+                font-size: 3rem;
+                color: #e8c28c;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 60px;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            }
+
+            .menu-grid {
+                display: grid;
+                gap: 30px;
+            }
+
+            .menu-item {
+                background-color: #2a2725;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .menu-item:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+            }
+
+            .menu-item img {
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                border-bottom: 2px solid #d89b5c;
+            }
+
+            .menu-item-content {
+                padding: 20px;
+            }
+
+            .menu-item-name {
+                font-size: 1.5rem;
+                color: #f5f5f5;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            .menu-item-description {
+                font-size: 1rem;
+                color: #cfcfcf;
+                margin-bottom: 15px;
+            }
+
+            .menu-item-price {
+                font-size: 1.2rem;
+                color: #d89b5c;
+                font-weight: 500;
+            }
+
+            .footer-custom {
+                background-color: #1c1a18;
+                font-size: 0.95rem;
+                line-height: 1.6;
+                padding: 60px 0;
+                border-top: 1px solid #4a4a4a;
+            }
+
+            .footer-heading {
+                color: #e8c28c;
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: 1.2rem;
+            }
+
+            .footer-link {
+                color: #f5f5f5;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+            .footer-link:hover {
+                color: #d89b5c;
+                text-decoration: underline;
+            }
+            
+            
+
+            @media (min-width: 992px) {
+                .menu-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(2, auto);
+                }
+            }
+
+            @media (max-width: 991px) {
+                .menu-grid {
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                }
+            }
+
+            @media (max-width: 768px) {
+                .menu-section h1 {
+                    font-size: 2.2rem;
+                }
+
+                .menu-item-name {
+                    font-size: 1.3rem;
+                }
+
+                .menu-item-price {
+                    font-size: 1.1rem;
+                }
+
+                .menu-item img {
+                    height: 180px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">MEMOIR</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" style="flex-grow: 0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="gap: 25px">
+                        <li class="nav-item"><a class="nav-link active" href="MenuMemoir.html">Sản phẩm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Thương hiệu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="MienKiUc.html">Miền kí ức</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="btn btn-register" href="Register.html">Đăng kí</a>
+                    <a class="btn btn-register" href="Login.html">Đăng nhập</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="menu-section">
+            <div class="container">
+                <h1 class="custom-title">Memoir</h1>
+                <div class="menu-grid">
+                    <!-- Cà Phê Đen Đá -->
+
+                    <div class="menu-item">
+                        <img src="den.jpg" alt="Pour-Over Coffee">
+                        <div class="menu-item-content">
+                            <div class="menu-item-name">Pour-Over Coffee</div>
+                            <div class="menu-item-description">Cà phê phin thủ công, giữ trọn hương vị nguyên bản của hạt Robusta.</div>
+                            <div class="menu-item-price">50,000 VND</div>
+                        </div>
+                    </div>
+
+
+                    <!-- Cà Phê Sữa Đá -->
+                    <div class="menu-item">
+                        <img src="sua.jpg" alt="Cà Phê Sữa Đá">
+                        <div class="menu-item-content">
+                            <div class="menu-item-name">Cà Phê Sữa Đá</div>
+                            <div class="menu-item-description">Hòa quyện giữa cà phê phin và sữa đặc béo ngậy, thêm đá.</div>
+                            <div class="menu-item-price">40,000 VND</div>
+                        </div>
+                    </div>
+                    <!-- Pour-Over Coffee -->
+                    
+                    
+                    <div class="menu-item">
+                        <img src="muoi.jpg" alt="Trà Sen Vàng">
+                        <div class="menu-item-content">
+                            <div class="menu-item-name">Cà Phê Muối</div>
+                            <div class="menu-item-description">Cà phê phin đậm đà kết hợp muối biển Huế, vị mặn ngọt độc đáo.</div>
+                            <div class="menu-item-price">60,000 VND</div>
+                        </div>
+                    </div>
+
+                    
+
+                    <!-- Trà Nhài Tây Bắc -->
+                    <div class="menu-item">
+                        <img src="dao.jpg" alt="Trà Nhài Tây Bắc">
+                        <div class="menu-item-content">
+                            <div class="menu-item-name">Trà Nhài Mật Tây Bắc</div>
+                            <div class="menu-item-description">Trà nhài thơm nhẹ, được ủ từ lá trà Tây Bắc chính gốc.</div>
+                            <div class="menu-item-price">45,000 VND</div>
+                        </div>
+                    </div>
+                    <!-- Matcha Đà Lạt -->
+                    <div class="menu-item">
+                        <img src="matcha1.jpg" alt="Matcha Đà Lạt">
+                        <div class="menu-item-content">
+                            <div class="menu-item-name">Matcha Đà Lạt</div>
+                            <div class="menu-item-description">Matcha nguyên chất từ Đà Lạt, vị ngọt thanh, mịn màng.</div>
+                            <div class="menu-item-price">55,000 VND</div>
+                        </div>
+                    </div>
+                    <!-- Trà Sen Vàng -->
+                    
+                    <div class="menu-item">
+                        <img src="dau.jpg" alt="Cà Phê Đen Đá">
+                        <div class="menu-item-content">
+                            <div class="menu-item-name">Trà Nhài Dâu Tây Bắc</div>
+                            <div class="menu-item-description">Trà nhài Tây Bắc hòa quyện với vị dâu tây tươi, chua ngọt thanh mát.</div>
+                            <div class="menu-item-price">35,000 VND</div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-custom text-white">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-md-4">
+                        <h5 class="footer-heading">Liên hệ</h5>
+                        <p><strong>Địa chỉ:</strong> 123 Đường Ký Ức, Quận Bình Thạnh, TP. HCM</p>
+                        <p><strong>Email:</strong> contact@memoircafe.vn</p>
+                        <p><strong>Hotline:</strong> 0909 123 456</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="footer-heading">Giờ hoạt động</h5>
+                        <p>Thứ 2 – Chủ Nhật: 7:00 - 22:00</p>
+                        <p>Phục vụ cà phê, trà & bánh ngọt thủ công</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="footer-heading">Kết nối với chúng tôi</h5>
+                        <p>
+                            <a href="https://www.facebook.com/profile.php?id=61576429155130" class="footer-link"><i class="bi bi-facebook me-2"></i>Facebook</a><br>
+                            <a href="#" class="footer-link"><i class="bi bi-instagram me-2"></i>Instagram</a><br>
+                            <a href="#" class="footer-link"><i class="bi bi-twitter me-2"></i>Twitter</a>
+                        </p>
+                    </div>
+                </div>
+                <hr class="my-4" style="border-top: 1px solid #555;">
+                <div class="text-center" style="color: #aaa;">
+                    © 2025 MEMOIR Cafe. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
