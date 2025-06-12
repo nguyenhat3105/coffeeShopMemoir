@@ -107,7 +107,89 @@
 
             .menu-item-price {
                 font-size: 1.2rem;
-html">About Us</a></li>
+                color: #d89b5c;
+                font-weight: 500;
+            }
+
+            .footer-custom {
+                background-color: #1c1a18;
+                font-size: 0.95rem;
+                line-height: 1.6;
+                padding: 60px 0;
+                border-top: 1px solid #4a4a4a;
+            }
+
+            .footer-heading {
+                color: #e8c28c;
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: 1.2rem;
+            }
+
+            .footer-link {
+                color: #f5f5f5;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+            .footer-link:hover {
+                color: #d89b5c;
+                text-decoration: underline;
+            }
+            
+            
+
+            @media (min-width: 992px) {
+                .menu-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(2, auto);
+                }
+            }
+
+            @media (max-width: 991px) {
+                .menu-grid {
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                }
+            }
+
+            @media (max-width: 768px) {
+                .menu-section h1 {
+                    font-size: 2.2rem;
+                }
+
+                .menu-item-name {
+                    font-size: 1.3rem;
+                }
+
+                .menu-item-price {
+                    font-size: 1.1rem;
+                }
+
+                .menu-item img {
+                    height: 180px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">MEMOIR</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" style="flex-grow: 0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="gap: 25px">
+                        <li class="nav-item"><a class="nav-link active" href="MenuMemoir.html">Sản phẩm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Thương hiệu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="MienKiUc.html">Miền kí ức</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
                     </ul>
                 </div>
                 <div>
